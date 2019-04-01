@@ -40,3 +40,4 @@ user info tablee
 UserName
 UserPass
 UserID
+User team (an array of playerID)
