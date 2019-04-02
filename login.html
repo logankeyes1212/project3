@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Parallax Template - Materialize</title>
+
+    <!-- CSS  -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo"><img src="images/logo/logob-ball.png"></a>
+            <ul class="right hide-on-med-and-down">
+                <!-- nav controls -->
+                <li><a href="#about">About Us</a></li>
+                <li>
+                    <!-- Modal Button -->
+                    <div id="loginClick">
+                        <a class="modal-trigger" href="#modal1">Login</a>
+                    </div>
+                    <!-- Modal Body -->
+                    <div id="loginModal"></div>
+                </li>
+
+                <li><a href="http://facebook.com"><img src="images/navlinks/icons8-facebook-48.png"></a></li>
+                <li><a href="http://linkedin.com"><img src="images/navlinks/icons8-linkedin-48.png"></a></li>
+                <li><a href="http://twitter.com"><img src="images/navlinks/icons8-twitter-48.png"></a></li>
+            </ul>
+            <!-- mobile nav control -->
+            <ul id="nav-mobile" class="sidenav">
+                <li><a href="#about">About Us</a></li>
+                <li>
+                    <!-- Modal Button -->
+                    <div id="loginClick">
+                        <a class="modal-trigger" href="#modal1">Login</a>
+                    </div>
+                    <!-- Modal Body -->
+                    <div id="loginModal"></div>
+                </li>
+
+                <li>
+                    <a href="http://facebook.com"><img src="images/navlinks/icons8-facebook-48.png"></a>
+                    <a href="http://linkedin.com"><img src="images/navlinks/icons8-linkedin-48.png"></a>
+                    <a href="http://twitter.com"><img src="images/navlinks/icons8-twitter-48.png"></a>
+                </li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+    <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <h1>The Seventh Man</h1>
+                    <div id="signUpClick">
+                        <a href="#modal2" id="download-button" class="btn-large waves-effect waves-light teal lighten-1 modal-trigger">SignUp</a>
+                    </div>
+                    <div id="signUpModal"></div>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img src="images/backgroundImages/bird.jpg" alt="Unsplashed background img 1"></div>
+    </div>
+
+    <!-- about -->
+    <div class="container" id="about">
+        <div class="section">
+
+            <!--   Icon Section   -->
+            <div class="row">
+                <div class="col s12 center">
+                    <h4>About Us</h4>
+                    </br></br>
+
+                    <p>Welcome to the The Seventh Man, a premier fantasy basketball app that helps you find the best player at any position. In our app you can find the who is leading the league at each position, who is treading, and who are the sleeper picks in the league. We stave to be the best fantasy sports helper in the world. Please sign up and start dominating all your friends in fantasy this year.  </p>
+                    </br></br>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="page-footer teal">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Company Bio</h5>
+                    <p class="grey-text text-lighten-4">We at The Seventh Man are a group web developers just finishing a coding bootcamp at the University of Minnesota. Our team of talented web developers consist of Jered, Mike Smith, Jeremy Guyton, Dan Casazza, and Logan Keyes. We hope you enjoy your time at The Seventh Man.</p>
+
+                </div>
+                <div class="col l3 s12">
+
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Connect</h5>
+                    <ul>
+                        <li>
+                            <div id="loginClick">
+                                <a class="modal-trigger white-text" href="#modal1">Login</a>
+                            </div>
+                            <!-- Modal Body -->
+                            <div id="loginModal"></div>
+                        </li>
+                        <li><a class="white-text" href="#!">Contact us</a></li>
+                        <li><a class="white-text" href="#!">Github</a></li>
+                        </br>
+                        <li>
+                            <a href="http://facebook.com"><img src="images/navlinks/icons8-facebook-48.png"></a>
+                            <a href="http://linkedin.com"><img src="images/navlinks/icons8-linkedin-48.png"></a>
+                            <a href="http://twitter.com"><img src="images/navlinks/icons8-twitter-48.png"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>
