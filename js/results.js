@@ -1,5 +1,7 @@
+// let playerData = require("../routes/routes.js")
 $(document).ready(function () {
-
+ 
+    console.log(playerData)
     // dummy data
     //==========================
     $("#leagueLeadersDiv").append(

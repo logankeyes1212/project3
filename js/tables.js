@@ -1,5 +1,11 @@
 $(document).ready(function () {
     // leaderPG()
+
+    animals.forEach(function(animal) {
+    $.getJSON("/all", function(data) {
+        // Call our function to generate a table body
+        displayResults(data);
+      });
 // const dropDown = 
 // $('.dropdown-trigger').dropdown();
 //     switch(dropDown){
