@@ -3,7 +3,7 @@ import facebookImg from "../img/navlinks/icons8-facebook-48.png"
 import linkedinImg from "../img/navlinks/icons8-linkedin-48.png"
 import twitterImg from "../img/navlinks/icons8-twitter-48.png"
 
-function Footer(){
+function FooterLogin(){
     return(
         <>
  <footer className="page-footer teal">
@@ -42,4 +42,4 @@ function Footer(){
     )
 }
 
-export default Footer;
+export default FooterLogin;
