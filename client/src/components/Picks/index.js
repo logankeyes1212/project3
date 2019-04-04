@@ -10,10 +10,10 @@ function Picks() {
                         <div className="col s12 center">
                             <a id="leagueLeadersClick" className="btn-large waves-effect waves-light teal lighten-1">Leaders</a>
                             <a id="leagueSleeperClick" className="btn-large waves-effect waves-light teal lighten-1">Sleepers</a>
-                            <a id="leagueTreadingClick" className="btn-large waves-effect waves-light teal lighten-1">Treading</a>
+                            <a id="leagueTrendingClick" className="btn-large waves-effect waves-light teal lighten-1">Trending</a>
                             <div id="leagueLeadersDiv"></div>
                             <div id="leagueSleeperDiv"></div>
-                            <div id="leagueTreadingDiv"></div>
+                            <div id="leagueTrendingDiv"></div>
                         </div>
                     </div>
                 </div>
