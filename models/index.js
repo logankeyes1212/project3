@@ -1,3 +1,3 @@
 module.exports = {
-  Player: require("./player")
+  nbaplayercombined: require("./player")
 };
