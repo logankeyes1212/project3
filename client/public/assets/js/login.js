@@ -29,7 +29,7 @@ $(document).ready(function () {
                 '</div>' +
                 '</div>' +
                 '<div class="modal-footer">' +
-                '<a href="#signUpModal" class="modal-action modal-close waves-effect waves-green btn-flat">Sign up</a>' +
+                '<a href="#modal2" class="modal-action modal-close waves-effect waves-green btn-flat">Sign up</a>' +
                 '<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>' +
                 '</div>' +
                 '</div> '
@@ -40,6 +40,7 @@ $(document).ready(function () {
 
     function signUp(){
     $("#signUpClick").on("click", function () {
+        console.log("signup")
         $('.modal').modal(
             $("#signUpModal").append(
 
@@ -62,10 +63,6 @@ $(document).ready(function () {
                 '<label for="Password">Password</label>' +
                 '</div>' +
                 '<div class="input-field col s12">' +
-                '<input id="Password" type="text" class="validate">' +
-                '<label for="Password">Retype Password</label>' +
-                '</div>' +
-                '<div class="input-field col s12">' +
                 '<button type="submit" class="waves-effect waves-light btn">Sign Up</button>' +
                 '</div>' +
                 '</div>' +
@@ -73,8 +70,8 @@ $(document).ready(function () {
                 '</div>' +
                 '</div>' +
                 '<div class="modal-footer">' +
+                '<a href="#modal1" class="modal-action modal-close waves-effect waves-green btn-flat">Login</a>' +
                 '<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>' +
-                '<a href="loginModal" class="modal-action modal-close waves-effect waves-green btn-flat">Login</a>' +
                 '</div>' +
                 '</div> '
             )

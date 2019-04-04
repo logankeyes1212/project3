@@ -1,7 +1,6 @@
-// let playerData = require("../routes/routes.js")
 $(document).ready(function () {
  
-    console.log(playerData)
+    
     // dummy data
     //==========================
     $("#leagueLeadersDiv").append(
@@ -12,8 +11,9 @@ $(document).ready(function () {
     //===========================
     //leader container
     $("#leagueLeadersClick").on("click", function () {
+        console.log("leaders ")
         $("#leagueLeadersDiv").empty()
-        $("#leagueTreadingDiv").empty()
+        $("#leagueTrendingDiv").empty()
         $("#leagueSleeperDiv").empty()
 
         $("#leagueLeadersDiv").append(
@@ -24,21 +24,23 @@ $(document).ready(function () {
     })
     // sleeper container
     $("#leagueSleeperClick").on("click", function () {
+        console.log("sleepers ")
         $("#leagueSleeperDiv").empty()
         $("#leagueLeadersDiv").empty()
-        $("#leagueTreadingDiv").empty()
+        $("#leagueTrendingDiv").empty()
         $("#leagueSleeperDiv").append(
             '<h4>League Div</h4>' +
             '</br></br>' +
             '<p>(C, PF, SG, PG, SF) and then generate the top 20 players at the selected postition</p>'
         )
     })
-    //treading container
-    $("#leagueTreadingClick").on("click", function () {
-        $("#leagueTreadingDiv").empty()
+    //Trending container
+    $("#leagueTrendingClick").on("click", function () {
+        console.log("Trending ")
+        $("#leagueTrendingDiv").empty()
         $("#leagueLeadersDiv").empty()
         $("#leagueSleeperDiv").empty()
-        $("#leagueTreadingDiv").append(
+        $("#leagueTrendingDiv").append(
             '<h4>League Div</h4>' +
             '</br></br>' +
             '<p>postition</p>'
