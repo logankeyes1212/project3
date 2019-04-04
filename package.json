@@ -13,7 +13,8 @@
         "materialize-css": "^1.0.0",
         "mongoose": "^5.3.16",
         "passport": "^0.4.0",
-        "react-materialize": "^3.0.3"
+        "react-materialize": "^3.0.3",
+        "react-router-dom": "^5.0.0"
     },
     "scripts": {
         "start": "if-env NODE_ENV=production && yarn start:prod || yarn start:dev2",
