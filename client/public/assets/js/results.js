@@ -13,7 +13,7 @@ $(document).ready(function () {
     $("#leagueLeadersClick").on("click", function () {
         console.log("leaders ")
         $("#leagueLeadersDiv").empty()
-        $("#leagueTreadingDiv").empty()
+        $("#leagueTrendingDiv").empty()
         $("#leagueSleeperDiv").empty()
 
         $("#leagueLeadersDiv").append(
@@ -27,20 +27,20 @@ $(document).ready(function () {
         console.log("sleepers ")
         $("#leagueSleeperDiv").empty()
         $("#leagueLeadersDiv").empty()
-        $("#leagueTreadingDiv").empty()
+        $("#leagueTrendingDiv").empty()
         $("#leagueSleeperDiv").append(
             '<h4>League Div</h4>' +
             '</br></br>' +
             '<p>(C, PF, SG, PG, SF) and then generate the top 20 players at the selected postition</p>'
         )
     })
-    //treading container
-    $("#leagueTreadingClick").on("click", function () {
-        console.log("treading ")
-        $("#leagueTreadingDiv").empty()
+    //Trending container
+    $("#leagueTrendingClick").on("click", function () {
+        console.log("Trending ")
+        $("#leagueTrendingDiv").empty()
         $("#leagueLeadersDiv").empty()
         $("#leagueSleeperDiv").empty()
-        $("#leagueTreadingDiv").append(
+        $("#leagueTrendingDiv").append(
             '<h4>League Div</h4>' +
             '</br></br>' +
             '<p>postition</p>'
