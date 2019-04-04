@@ -1,7 +1,6 @@
-// let playerData = require("../routes/routes.js")
 $(document).ready(function () {
  
-    console.log(playerData)
+    
     // dummy data
     //==========================
     $("#leagueLeadersDiv").append(
@@ -12,6 +11,7 @@ $(document).ready(function () {
     //===========================
     //leader container
     $("#leagueLeadersClick").on("click", function () {
+        console.log("leaders ")
         $("#leagueLeadersDiv").empty()
         $("#leagueTreadingDiv").empty()
         $("#leagueSleeperDiv").empty()
@@ -24,6 +24,7 @@ $(document).ready(function () {
     })
     // sleeper container
     $("#leagueSleeperClick").on("click", function () {
+        console.log("sleepers ")
         $("#leagueSleeperDiv").empty()
         $("#leagueLeadersDiv").empty()
         $("#leagueTreadingDiv").empty()
@@ -35,6 +36,7 @@ $(document).ready(function () {
     })
     //treading container
     $("#leagueTreadingClick").on("click", function () {
+        console.log("treading ")
         $("#leagueTreadingDiv").empty()
         $("#leagueLeadersDiv").empty()
         $("#leagueSleeperDiv").empty()

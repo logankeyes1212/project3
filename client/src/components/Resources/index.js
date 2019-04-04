@@ -10,15 +10,15 @@ import javascriptImg from "../img/Resources/javascript_logo.png"
 function Resources() {
     return (
         <>
-            <div class="container" id="Resources">
-                <div class="section">
-                    <div class="row">
-                        <div class="col s12 center">
-                            <h3><i class="mdi-content-send brown-text"></i></h3>
+            <div className="container" id="Resources">
+                <div className="section">
+                    <div className="row">
+                        <div className="col s12 center">
+                            <h3><i className="mdi-content-send brown-text"></i></h3>
                             <h4>Resources</h4>
-                            <div class="col s12 m4 center"><br></br><img src={fantasydataImg} alt="fantasydata"/><br></br><br></br><br></br><img src={nbaImg} alt="nba" /></div>
-                            <div class="col s12 m4 center"><img src={fanduelImg} alt ="fanduel" /><br></br><br></br> <img src={materializeImg} alt="materialize"/></div>
-                            <div class="col s12 m4 center"><img src={htmlImg} alt="html" /><br></br><br></br> <img src={javascriptImg} alt= "javascript"/></div >
+                            <div className="col s12 m4 center"><br></br><img src={fantasydataImg} alt="fantasydata"/><br></br><br></br><br></br><img src={nbaImg} alt="nba" /></div>
+                            <div className="col s12 m4 center"><img src={fanduelImg} alt ="fanduel" /><br></br><br></br> <img src={materializeImg} alt="materialize"/></div>
+                            <div className="col s12 m4 center"><img src={htmlImg} alt="html" /><br></br><br></br> <img src={javascriptImg} alt= "javascript"/></div >
                         </div >
                     </div >
                 </div >
