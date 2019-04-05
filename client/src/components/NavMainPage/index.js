@@ -1,15 +1,17 @@
 import React from "react";
-import facebookImg from "../img/navlinks/icons8-facebook-48.png"
-import linkedinImg from "../img/navlinks/icons8-linkedin-48.png"
-import twitterImg from "../img/navlinks/icons8-twitter-48.png"
+import facebookImg from "../img/navlinks/icons8-facebook-48.png";
+import linkedinImg from "../img/navlinks/icons8-linkedin-48.png";
+import twitterImg from "../img/navlinks/icons8-twitter-48.png";
+import logoSmall from "../img/logo/logoSmall.png";
 
 
-function Nav() {
+
+function NavMain() {
     return (
         <>
         <nav className="white" role="navigation">
         <div className="nav-wrapper container">
-          <a id="logo-container" href="#" className="brand-logo"><h5>User name goes here</h5></a>
+          <a id="logo-container"  className="brand-logo"><img  src={logoSmall} alt="our logo"></img><h5>User name goes here</h5></a>
           <ul className="right hide-on-med-and-down">
             {/* <!-- nav controls --> */}
             <li><a href="#leaders">League Leaders</a></li>
@@ -37,4 +39,4 @@ function Nav() {
     );
 }
 
-export default Nav;
+export default NavMain;

@@ -8,6 +8,6 @@ const playerSchema = new Schema({
   // date: { type: Date, default: Date.now }
 });
 
-const Player = mongoose.model("Player", playerSchema);
+const nbaplayercombined = mongoose.model("Player", playerSchema);
 
-module.exports = Player;
+module.exports = nbaplayercombined;
