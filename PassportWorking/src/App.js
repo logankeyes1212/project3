@@ -3,10 +3,10 @@ import axios from 'axios'
 import { Route, Link } from 'react-router-dom'
 // components
 import Signup from './components/Sign-up'
-import Login from './components/Login-form'
-import Navbar from './components/NavbarTop'
-import AboutUs from './components/AboutUsLoginPage'
-import MasterComponent from './components/Master'
+import Login from '../src/components/Login-form'
+import Navbar from '../src/components/NavbarTop'
+import AboutUs from '../src/components/AboutUsLoginPage'
+import MasterComponent from '../src/components/Master'
 import { Button, Card, Row, Col } from 'react-materialize';
 
 
