@@ -1,6 +1,6 @@
 var express = require("express");
 var router=express.Router()
-var db=require("../models");
+var db=require("./models");
 var User=db.User;
 // const ensureLoggedIn = require("connect-ensure-login").ensureLoggedIn;
 
