@@ -1,9 +1,25 @@
 const express = require("express");
-
 const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
+const passport=require("passport");
+const session=require("express-session");
+const cookieParser=require("cookie-parser");
+
+
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(cookieParser());
+app.use(session({ secret: "cats",
+saveUninitialized:false,
+resave:false }));
+app.use(passport.initialize());
+app.use(passport.session());
+
+const passportRote = require("./routes/auth")(passport);
+require("./passport")(passport);
+app.use('/auth', passportRote);
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));

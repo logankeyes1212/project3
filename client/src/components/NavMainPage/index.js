@@ -11,12 +11,12 @@ function NavMain() {
         <>
         <nav className="white" role="navigation">
         <div className="nav-wrapper container">
-          <a id="logo-container"  className="brand-logo"><img  src={logoSmall} alt="our logo"></img><h5>User name goes here</h5></a>
+        <a id="logo-container" className="brand-logo"><h5><img  src={logoSmall} alt="our logo"></img>User Name goes here</h5></a>
           <ul className="right hide-on-med-and-down">
             {/* <!-- nav controls --> */}
             <li><a href="#leaders">League Leaders</a></li>
             <li><a href="#Resources">Resources</a></li>
-            <li><a href="#signOut">Sign out</a></li>
+            <li><a href="/login">Sign out</a></li>
             <li><a href="http://facebook.com"><img src={facebookImg} alt="facebook"/></a></li>
             <li><a href="http://linkedin.com"><img src={linkedinImg} alt="linkedin"/></a></li>
             <li><a href="http://twitter.com"><img src={twitterImg} alt="twitter"/></a></li> 
@@ -25,7 +25,7 @@ function NavMain() {
           <ul id="nav-mobile" className="sidenav">
             <li><a href="#leaders">League Leaders</a></li>
             <li><a href="#Resources">Resources</a></li>
-            <li><a href="#signOut">Sign out</a></li>
+            <li><a href="/login">Sign out</a></li>
             <li>
               <a href="http://facebook.com"><img src={facebookImg} alt="bookface"/></a>
               <a href="http://linkedin.com"><img src={linkedinImg} alt="linkedin"/></a>

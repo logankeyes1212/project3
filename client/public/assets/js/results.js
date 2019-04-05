@@ -1,6 +1,5 @@
 $(document).ready(function () {
- 
-    
+
     // dummy data
     //==========================
     $("#leagueLeadersDiv").append(
