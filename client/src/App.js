@@ -6,11 +6,14 @@ import Nav from "./components/NavMainPage";
 import Footer from "./components/FooterMainPage"
 import Picks from "./components/Picks"
 import Resources from "./components/Resources"
+import Login from "./components/Login"
+
 
 
 function App() {
   return (
     <>
+      <Login />
       <Nav />
       <Bird />
       <Picks />
