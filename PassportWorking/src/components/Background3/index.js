@@ -8,16 +8,16 @@ class Davis extends Component {
     constructor() {
         super()
     }
-    render (){
-return(
+    render() {
+        return (
 
-    
-    <div>
-    <Parallax imageSrc={AnthonyDavis}/>
-        </div>
-    
-);
-}
+
+            <div>
+                <Parallax imageSrc={AnthonyDavis} />
+            </div>
+
+        );
+    }
 }
 
 export default Davis;
