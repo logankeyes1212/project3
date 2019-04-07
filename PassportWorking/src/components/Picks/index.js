@@ -8,12 +8,28 @@ import '../../assets/css/style.css'
 
 
 
-
 class Picks extends Component {
+    state = {
+        // leaders: "league",
+        // sleepers: "sleepers",
+        // trending: "trending"
+        league: "The default text"
+    }
     constructor() {
         super()
     }
+   leagueLeader = data => {
+    this.setState({league:"leaders div"});
 
+   }
+   leagueSleepers = data => {
+    this.setState({league:"sleepers div"});
+
+   }
+   leagueTrending = data => {
+    this.setState({league:"trending div"});
+
+   }
 
     render(){
 
@@ -24,12 +40,12 @@ class Picks extends Component {
 
                     <div className="row">
                         <div className="col s12 center">
-                            <a id="leagueLeadersClick" className="btn-large waves-effect waves-light teal lighten-1">Leaders</a>
-                            <a id="leagueSleeperClick" className="btn-large waves-effect waves-light teal lighten-1">Sleepers</a>
-                            <a id="leagueTrendingClick" className="btn-large waves-effect waves-light teal lighten-1">Trending</a>
-                            <div id="leagueLeadersDiv"></div>
-                            <div id="leagueSleeperDiv"></div>
-                            <div id="leagueTrendingDiv"></div>
+                            <a onClick= {this.leagueLeader} className="btn-large waves-effect waves-light teal lighten-1">Leaders</a>
+                            <a onClick= {this.leagueSleepers} className="btn-large waves-effect waves-light teal lighten-1">Sleepers</a>
+                            <a onClick= {this.leagueTrending} className="btn-large waves-effect waves-light teal lighten-1">Trending</a>
+                            <div>{this.state.league}</div>
+                            {/* <div id="leagueSleeperDiv"></div>
+                            <div id="leagueTrendingDiv"></div> */}
                         </div>
                     </div>
                 </div>

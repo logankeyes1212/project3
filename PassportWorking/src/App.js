@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import axios from 'axios'
-import { Route, Link } from 'react-router-dom'
+import { Route, Link} from 'react-router-dom'
 // components
 import Signup from './components/Sign-up'
 import Login from '../src/components/Login-form'
 import Navbar from '../src/components/NavbarTop'
-import AboutUs from '../src/components/AboutUsLoginPage'
-import MasterComponent from '../src/components/Master'
+import MainMasterComponent from '../src/components/mainMaster'
+import LandingPage from '../src/components/Home'
 import { Button, Card, Row, Col } from 'react-materialize';
 
 
@@ -54,22 +54,27 @@ class App extends Component {
   }
 
   render() {
+ 
     return (
       <div className="App">
    
         <Navbar updateUser={this.updateUser} loggedIn={this.state.loggedIn} />
-        {/* greet user if logged in: */}
         {this.state.loggedIn && 
-           <MasterComponent />
+           <MainMasterComponent />
           //render all the things
         }
         
         {/* Routes to different components */}
         <Route
-          exact path="/"
-          component={AboutUs}
+          exact path="/home"
+          component={LandingPage}
           />
         
+        <Route
+          exact path="/"
+          component={LandingPage}
+          />
+
         <Route
           path="/login"
           render={() =>

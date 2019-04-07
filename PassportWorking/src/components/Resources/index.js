@@ -1,5 +1,5 @@
 import React from "react";
-import fantasydataImg from "../../assets/img/Resources/FanDuel.png"
+import fantasydataImg from "../../assets/img/Resources/fantasydata.png"
 import nbaImg from "../../assets/img/Resources/nba-logo.png"
 import fanduelImg from "../../assets/img/Resources/FanDuel.png"
 import materializeImg from "../../assets/img/Resources/materialize.png"

@@ -1,9 +1,10 @@
-import React, { Component } from 'react'
-import { Redirect } from 'react-router-dom'
-import axios from 'axios'
-import { Button, Card, Row, Col } from 'react-materialize';
-import '../../assets/css/materialize.css'
-import '../../assets/css/style.css'
+import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
+import axios from 'axios';
+import AnthonyDavis from "../../assets/img/backgroundImages/davis.jpeg";
+import { Button, Card, Row, Col, Parallax } from 'react-materialize';
+import '../../assets/css/materialize.css';
+import '../../assets/css/style.css';
 
 class Login extends Component {
     constructor() {
@@ -15,7 +16,7 @@ class Login extends Component {
         }
         this.handleSubmit = this.handleSubmit.bind(this)
         this.handleChange = this.handleChange.bind(this)
-  
+
     }
 
     handleChange(event) {
@@ -50,7 +51,7 @@ class Login extends Component {
             }).catch(error => {
                 console.log('login error: ')
                 console.log(error);
-                
+
             })
     }
 
@@ -60,6 +61,10 @@ class Login extends Component {
         } else {
             return (
                 <div>
+                    <div>
+                        <Parallax imageSrc={AnthonyDavis} />
+                    </div>
+
                     <h4>Login</h4>
                     <form className="form-horizontal">
                         <div className="form-group">
@@ -95,7 +100,7 @@ class Login extends Component {
                             <div className="col-7"></div>
                             <button
                                 className="btn btn-primary col-1 col-mr-auto"
-                               
+
                                 onClick={this.handleSubmit}
                                 type="submit">Login</button>
                         </div>

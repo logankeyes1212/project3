@@ -9,7 +9,7 @@ import '../../assets/css/style.css'
 function Footer(){
     return(
         
- <footer className="page-footer teal">
+ <footer className="page-footer teal" id="bio">
         <div className="container">
             <div className="row">
                 <div className="col l6 s12">

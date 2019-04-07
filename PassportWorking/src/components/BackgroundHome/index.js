@@ -10,15 +10,15 @@ class Bird extends Component {
     constructor() {
         super()
     }
-    render() {
-        return (
+    render (){
+return(
 
-            <div>            
-                <Parallax imageSrc={LarryBirdBackground} />   
-            </div>
-
-        );
-    }
+    <div>
+<Parallax imageSrc={LarryBirdBackground}/>
+    </div>
+   
+);
+}
 }
 
 
