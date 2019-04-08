@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import logoLarge from "../../assets/img/logo/logob-ball.png"
+import logoLarge from "../../assets/img/logo/logoLarge.png"
+import { Button, Card, Row, Col } from 'react-materialize';
 import '../../assets/css/materialize.css'
 import '../../assets/css/style.css'
 
