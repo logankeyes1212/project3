@@ -1,67 +1,78 @@
-import React, { Component } from 'react'
-import '../../assets/css/materialize.css'
-import '../../assets/css/style.css'
-
+import React, { Component } from 'react';
+import '../../assets/css/materialize.css';
+import '../../assets/css/style.css';
+import logo from "../../assets/img/logo/logob-ball.png";
 
 
 class MyTeam extends Component {
-    state = {
-        default: ""
-        // <h4>Checkout my team or search for new players</h4>,
+constructor(props){
+    super(props);
+    
+    this.state = {
+      playerName : '',
+      default: ""
+    }
+    
+    this.updateInput = this.updateInput.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    }
 
 
-    }
-    constructor() {
-        super()
-    }
-    componentDidMount(){
+
+    componentDidMount() {
         this.myTeamDiv();
     }
     myTeamDiv = data => {
         this.setState({
-            default: 
-            <div>
-            <h4>My Team</h4>
-            < table class="responsive-table striped highlight" >
-                <thead>
-                    <tr>
-                        <th>Position</th>
-                        <th>Name</th>
-                        <th>Team</th>
-                    </tr>
-                </thead>
+            default:
+                <div>
+                    <h4>My Team</h4>
+                    < table class="responsive-table striped highlight" >
+                        <thead>
+                            <tr>
+                                <th>Position</th>
+                                <th>Name</th>
+                                <th>Team</th>
+                            </tr>
+                        </thead>
 
-                <tbody>
-                    <tr>
-                        <td>SG</td>
-                        <td>LeBron James</td>
-                        <td>L.A. Lakes</td>
-                    </tr>
-                    <tr>
-                        <td>C</td>
-                        <td>Karl Anthony Towns</td>
-                        <td>MN Timberwolves</td>
-                    </tr>
-                    <tr>
-                        <td>SG</td>
-                        <td>Kevin Durant</td>
-                        <td>SF Golden State Warriors</td>
-                    </tr>
-                </tbody>
-            </table >
-</div>
+                        <tbody>
+                            <tr>
+                                <td>SG</td>
+                                <td>LeBron James</td>
+                                <td>L.A. Lakes</td>
+                            </tr>
+                            <tr>
+                                <td>C</td>
+                                <td>Karl Anthony Towns</td>
+                                <td>MN Timberwolves</td>
+                            </tr>
+                            <tr>
+                                <td>SG</td>
+                                <td>Kevin Durant</td>
+                                <td>SF Golden State Warriors</td>
+                            </tr>
+                        </tbody>
+                    </table >
+                </div>
 
         });
     }
+    updateInput(event){
+        this.setState({playerName : event.target.value})
+        }
+        
+        
+        handleSubmit(){
+        console.log('Your input value is: ' + this.state.playerName)
+        //Send state to the server code
+        }
     searchDiv = data => {
         this.setState({
-            default: <form>
-                <label>
-                    Player Name:
-                <input type="text" name="name" />
-                </label>
-                <input type="submit" value="Submit" />
-            </form>
+            default:  <div>
+            <input type="text" onChange={this.updateInput}></input>
+            <input type="submit" onClick={this.handleSubmit} ></input>
+            </div>  
         });
 
     }
@@ -76,9 +87,10 @@ class MyTeam extends Component {
 
                     <div className="row">
                         <div className="col s12 center">
-                            <a onClick={this.myTeamDiv} className="btn-large waves-effect waves-light teal lighten-1">My Team</a>
-                            <a onClick={this.searchDiv} className="btn-large waves-effect waves-light teal lighten-1">Search</a>
 
+                            <a onClick={this.myTeamDiv} className="btn-large waves-effect waves-light lighten-1 orange">My Team</a>
+                            <img src={logo} className="App-logo" alt="logo" />
+                            <a onClick={this.searchDiv} className="btn-large waves-effect waves-light lighten-1 orange">Search</a>
                             <div>{this.state.default}</div>
 
                         </div>
@@ -89,5 +101,8 @@ class MyTeam extends Component {
         );
     }
 }
+
+
+
 
 export default MyTeam
