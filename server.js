@@ -8,7 +8,8 @@ const passport = require('./server/passport');
 const app = express()
 const PORT = 8080
 // Route requires
-const user = require('./routes/user')
+
+
 
 // MIDDLEWARE
 app.use(morgan('dev'))
@@ -33,11 +34,18 @@ app.use(
 app.use(passport.initialize())
 app.use(passport.session()) // calls the deserializeUser
 
-
+const user = require('./routes/user')
+if (process.env.NODE_ENV === "production") {
+	app.use(express.static("client/build"));
+  }
 // Routes
 app.use('/user', user)
 
+app.get("*", (req, res) => {
+	res.sendFile(path.join(__dirname, "./client/build/index.html"));
+  });
+  
 // Starting Server 
-app.listen(process.env.PORT || 3000, function(){
+app.listen(process.env.PORT || 8080, function(){
 	console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
   });

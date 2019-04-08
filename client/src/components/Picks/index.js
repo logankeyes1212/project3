@@ -17,18 +17,113 @@ class Picks extends Component {
         super()
     }
     leagueLeader = data => {
-        this.setState({ league: "leaders div" });
+        this.setState({
+            league:
+                <div>
+                    <h4>League leaders</h4>
+                    < table className="responsive-table striped highlight" >
+                        <thead>
+                            <tr>
+                                <th>Position</th>
+                                <th>Name</th>
+                                <th>Team</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>SG</td>
+                                <td>LeBron James</td>
+                                <td>L.A. Lakes</td>
+                            </tr>
+                            <tr>
+                                <td>C</td>
+                                <td>Karl Anthony Towns</td>
+                                <td>MN Timberwolves</td>
+                            </tr>
+                            <tr>
+                                <td>SG</td>
+                                <td>Kevin Durant</td>
+                                <td>SF Golden State Warriors</td>
+                            </tr>
+                        </tbody>
+                    </table >
+                </div>
+        });
 
     }
     leagueSleepers = data => {
-        this.setState({ league: "sleepers div" });
+        this.setState({
+            league:
+                <div>
+                    <h4>League sleeper picks</h4>
+                    < table className="responsive-table striped highlight" >
+                        <thead>
+                            <tr>
+                                <th>Position</th>
+                                <th>Name</th>
+                                <th>Team</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>SG</td>
+                                <td>LeBron James</td>
+                                <td>L.A. Lakes</td>
+                            </tr>
+                            <tr>
+                                <td>C</td>
+                                <td>Karl Anthony Towns</td>
+                                <td>MN Timberwolves</td>
+                            </tr>
+                            <tr>
+                                <td>SG</td>
+                                <td>Kevin Durant</td>
+                                <td>SF Golden State Warriors</td>
+                            </tr>
+                        </tbody>
+                    </table >
+                </div>
+        });
 
     }
     leagueTrending = data => {
-        this.setState({ league: "trending div" });
+        this.setState({
+            league: <div>
+                <h4>League trending picks</h4>
+                < table className="responsive-table striped highlight" >
+                    <thead>
+                        <tr>
+                            <th>Position</th>
+                            <th>Name</th>
+                            <th>Team</th>
+                        </tr>
+                    </thead>
 
+                    <tbody>
+                        <tr>
+                            <td>SG</td>
+                            <td>LeBron James</td>
+                            <td>L.A. Lakes</td>
+                        </tr>
+                        <tr>
+                            <td>C</td>
+                            <td>Karl Anthony Towns</td>
+                            <td>MN Timberwolves</td>
+                        </tr>
+                        <tr>
+                            <td>SG</td>
+                            <td>Kevin Durant</td>
+                            <td>SF Golden State Warriors</td>
+                        </tr>
+                    </tbody>
+                </table >
+            </div>
+
+
+        });
     }
-
     render() {
 
         return (
@@ -39,9 +134,7 @@ class Picks extends Component {
                     <div className="row">
                         <div className="col s12 center">
                             <a onClick={this.leagueLeader} className="btn-large waves-effect waves-light orange lighten-1">Leaders</a>
-                            <img src={logo} className="App-logo" alt="logo" />
                             <a onClick={this.leagueSleepers} className="btn-large waves-effect waves-light orange lighten-1">Sleepers</a>
-                            <img src={logo} className="App-logo" alt="logo" />
                             <a onClick={this.leagueTrending} className="btn-large waves-effect waves-light orange lighten-1">Trending</a>
                             <div>{this.state.league}</div>
                         </div>
