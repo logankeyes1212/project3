@@ -48,6 +48,7 @@ class Navbar extends Component {
                             <div>
                                 <ul className="right hide-on-med-and-down">
                                     <li><a href="#leaders">League Leaders</a></li>
+                                    <li><a href="#myTeam">My Team</a></li>
                                     <li><a href="#Resources">Resources</a></li>
                                     <li><a href="#bio">Company Bio</a></li>
                                     <li>
@@ -64,6 +65,7 @@ class Navbar extends Component {
 
                                 <ul id="nav-mobile" className="sidenav">
                                     <li><a href="#leaders">League Leaders</a></li>
+                                    <li><a href="#myTeam">My Team</a></li>
                                     <li><a href="#Resources">Resources</a></li>
                                     <li><a href="#bio">Company Bio</a></li>
                                     <li>
