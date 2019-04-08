@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "name": "The-Sev7enth-Man",
-=======
-  "name": "simple-mern-passport",
->>>>>>> 2471a8ff5b3fb896e57274ed387855685f5a1ce6
   "version": "0.1.0",
   "private": true,
   "dependencies": {
