@@ -45,7 +45,7 @@ class FooterHome extends Component {
                         <h5 className="white-text">Company Bio</h5>
                         <p className="grey-text text-lighten-4">We at The Se7enth Man are a group web developers just finishing
                             a coding bootcamp at the University of Minnesota. Our team of talented web developers consist
-                            of Jered Siriba, Mike Smith, Jeremy Guyton, Dan Casazza, and Logan Keyes. We hope you enjoy your time
+                            of Jared Siriba, Mike Smith, Jeremy Guyton, Dan Casazza, and Logan Keyes. We hope you enjoy your time
                         at The Se7enth Man.</p>
 
                     </div>
