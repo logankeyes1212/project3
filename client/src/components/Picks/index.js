@@ -1,6 +1,8 @@
-import React, { Component } from 'react'
-import '../../assets/css/materialize.css'
-import '../../assets/css/style.css'
+import React, { Component } from 'react';
+import '../../assets/css/materialize.css';
+import '../../assets/css/style.css';
+import logo from "../../assets/img/logo/logob-ball.png";
+
 
 
 
@@ -135,8 +137,6 @@ class Picks extends Component {
                             <a onClick={this.leagueSleepers} className="btn-large waves-effect waves-light orange lighten-1">Sleepers</a>
                             <a onClick={this.leagueTrending} className="btn-large waves-effect waves-light orange lighten-1">Trending</a>
                             <div>{this.state.league}</div>
-                            {/* <div id="leagueSleeperDiv"></div>
-                            <div id="leagueTrendingDiv"></div> */}
                         </div>
                     </div>
                 </div>
