@@ -16,7 +16,7 @@ return(
 
     
     <div>
-        <Parallax imageSrc={KATowns}/>
+<Parallax imageSrc={KATowns}/>
     </div>
     
 );
