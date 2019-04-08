@@ -1,10 +1,7 @@
 import React, { Component } from 'react'
-<<<<<<< HEAD:client/src/components/AboutUsLoginPage/index.js
 import logoLarge from "../../assets/img/logo/logob-ball.png"
-=======
 import logoLarge from "../../assets/img/logo/logoLarge.png"
 import { Button, Card, Row, Col } from 'react-materialize';
->>>>>>> 6ae18ffe4f8a030cea654e9a171ef747ed72bb3d:PassportWorking/src/components/AboutUsLoginPage/index.js
 import '../../assets/css/materialize.css'
 import '../../assets/css/style.css'
 
