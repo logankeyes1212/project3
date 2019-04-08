@@ -1,23 +1,23 @@
 import React, { Component } from 'react';
 import '../../assets/css/materialize.css';
 import '../../assets/css/style.css';
-import logo from "../../assets/img/logo/logob-ball.png";
+import API from "../../utils/API";
 
-
+console.log("API ",API)
 class MyTeam extends Component {
-constructor(props){
-    super(props);
-    
-    this.state = {
-      playerName : '',
-      default: ""
-    }
-    
-    this.updateInput = this.updateInput.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            playerName: '',
+            default: ""
+        }
+
+        this.updateInput = this.updateInput.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-
+ 
 
     componentDidMount() {
         this.myTeamDiv();
@@ -27,7 +27,7 @@ constructor(props){
             default:
                 <div>
                     <h4>My Team</h4>
-                    < table class="responsive-table striped highlight" >
+                    < table className="responsive-table striped highlight" >
                         <thead>
                             <tr>
                                 <th>Position</th>
@@ -58,21 +58,22 @@ constructor(props){
 
         });
     }
-    updateInput(event){
-        this.setState({playerName : event.target.value})
-        }
-        
-        
-        handleSubmit(){
+    updateInput(event) {
+        this.setState({ playerName: event.target.value })
+    }
+
+
+    handleSubmit() {
         console.log('Your input value is: ' + this.state.playerName)
         //Send state to the server code
-        }
+    }
     searchDiv = data => {
         this.setState({
-            default:  <div>
-            <input type="text" onChange={this.updateInput}></input>
-            <input type="submit" onClick={this.handleSubmit} ></input>
-            </div>  
+            default: <div>
+                <h4>Search For A Player</h4>
+                <input type="text" onChange={this.updateInput}></input>
+                <input type="submit" onClick={this.handleSubmit} ></input>
+            </div>
         });
 
     }
@@ -89,7 +90,6 @@ constructor(props){
                         <div className="col s12 center">
 
                             <a onClick={this.myTeamDiv} className="btn-large waves-effect waves-light lighten-1 orange">My Team</a>
-                            <img src={logo} className="App-logo" alt="logo" />
                             <a onClick={this.searchDiv} className="btn-large waves-effect waves-light lighten-1 orange">Search</a>
                             <div>{this.state.default}</div>
 
