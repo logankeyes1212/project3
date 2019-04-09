@@ -59,6 +59,9 @@ mongoose.connect(db)
 app.use('/api/players', players);
 //app.use('/api/nbaplayercombined', nbaplayers);
 
+app.get("*", (req, res) => {
+	res.sendFile(path.join(__dirname, "./client/build/index.html"));
+});
 
 // Starting Server 
 app.listen(process.env.PORT || 8080, function () {

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import facebookImg from "../../assets/img/navlinks/icons8-facebook-48.png";
 import linkedinImg from "../../assets/img/navlinks/icons8-linkedin-48.png";
 import twitterImg from "../../assets/img/navlinks/icons8-twitter-48.png";
+import logoSmall from "../../assets/img/logo/logoSmall.png";
 import '../../App.css';
 import axios from 'axios';
 
@@ -44,8 +45,11 @@ class Navbar extends Component {
 
                 <nav className="white" role="navigation">
                     <div className="nav-wrapper container">
+
                         {loggedIn ? (
                             <div>
+                                <img src={logoSmall} alt="logo" />
+
                                 <ul className="right hide-on-med-and-down">
                                     <li><a href="#leaders">League Leaders</a></li>
                                     <li><a href="#myTeam">My Team</a></li>
@@ -64,6 +68,7 @@ class Navbar extends Component {
 
 
                                 <ul id="nav-mobile" className="sidenav">
+                                <img src={logoSmall} alt="logo" />
                                     <li><a href="#leaders">League Leaders</a></li>
                                     <li><a href="#myTeam">My Team</a></li>
                                     <li><a href="#Resources">Resources</a></li>
@@ -83,6 +88,8 @@ class Navbar extends Component {
                             </div>
                         ) : (
                                 <div>
+                                    <img src={logoSmall} alt="logo" />
+
                                     <ul className="right hide-on-med-and-down">
                                         <li>
                                             <Link to="/home">
@@ -106,7 +113,9 @@ class Navbar extends Component {
                                         <li><a href="http://twitter.com"><img src={twitterImg} alt="twitter" /></a></li>
 
                                     </ul>
+                                    
                                     <ul id="nav-mobile" className="sidenav">
+                                    <img src={logoSmall} alt="logo" />
                                         <li>
                                             <Link to="/home">
                                                 <span className="text-secondary">Home</span>
@@ -137,10 +146,6 @@ class Navbar extends Component {
 
                             )}
                     </div>
-                    {/* <div className="col-4 col-mr-auto">
-                        <div id="top-filler"></div>
-                        <img src={logo} className="App-logo" alt="logo" />
-                    </div> */}
                 </nav>
             </div>
 

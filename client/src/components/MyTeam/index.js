@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import '../../assets/css/materialize.css';
 import '../../assets/css/style.css';
-import logo from "../../assets/img/logo/logob-ball.png";
+
+const db = require("mongoose");
 
 
 class MyTeam extends Component {
@@ -27,7 +28,7 @@ constructor(props){
             default:
                 <div>
                     <h4>My Team</h4>
-                    < table class="responsive-table striped highlight" >
+                    < table className="responsive-table striped highlight" >
                         <thead>
                             <tr>
                                 <th>Position</th>
@@ -68,6 +69,8 @@ constructor(props){
         //Send state to the server code
         }
     searchDiv = data => {
+        data.preventDefault();
+
         this.setState({
             default:  <div>
             <input type="text" onChange={this.updateInput}></input>
@@ -89,7 +92,6 @@ constructor(props){
                         <div className="col s12 center">
 
                             <a onClick={this.myTeamDiv} className="btn-large waves-effect waves-light lighten-1 orange">My Team</a>
-                            <img src={logo} className="App-logo" alt="logo" />
                             <a onClick={this.searchDiv} className="btn-large waves-effect waves-light lighten-1 orange">Search</a>
                             <div>{this.state.default}</div>
 
