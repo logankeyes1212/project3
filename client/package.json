@@ -5,7 +5,7 @@
   "engines": {
     "node": "10.15.1",
     "npm": "6.4.1"
-},
+  },
   "dependencies": {
     "axios": "^0.17.1",
     "bcryptjs": "^2.4.3",
