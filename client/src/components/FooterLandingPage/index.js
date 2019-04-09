@@ -1,5 +1,5 @@
 import React, { Component }from "react";
-import axios from 'axios'
+import axios from 'axios';
 import { Link } from 'react-router-dom';
 import facebookImg from "../../assets/img/navlinks/icons8-facebook-48.png";
 import linkedinImg from "../../assets/img/navlinks/icons8-linkedin-48.png";

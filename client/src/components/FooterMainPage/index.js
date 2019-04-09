@@ -21,8 +21,7 @@ function Footer(){
 
                 </div>
                 <div className="col l3 s12">
-                <div className="col l3 s12">
-                    <img src={logoLarge} alt="logo"/>
+                <img src={logoLarge} alt="logo"/>
 
                     </div>
                 </div>
@@ -39,7 +38,7 @@ function Footer(){
                     </ul>
                 </div>
             </div>
-        </div>
+        
         <div className="footer-copyright">
             <div className="container">Made by The Se7enth Man</div>
         </div>
