@@ -6,6 +6,7 @@ import logoLarge from "../../assets/img/logo/logoLarge.png";
 import '../../assets/css/materialize.css';
 import '../../assets/css/style.css';
 
+
 function Footer(){
     return(
         
