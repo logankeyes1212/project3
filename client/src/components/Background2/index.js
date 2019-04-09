@@ -13,12 +13,9 @@ class Towns extends Component {
     }
     render (){
 return(
-
-    
     <div>
-<Parallax imageSrc={KATowns}/>
-    </div>
-    
+        <Parallax imageSrc={KATowns}/>
+    </div>   
 );
 }
 }

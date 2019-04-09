@@ -84,7 +84,9 @@ class Picks extends Component {
 
     }
     leagueSleepers = data => {
+
         console.log(this.state.data);
+
         this.setState({
             league:
                 <div>

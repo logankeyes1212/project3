@@ -1,11 +1,11 @@
 import React from "react";
-import facebookImg from "../../assets/img/navlinks/icons8-facebook-48.png"
-import linkedinImg from "../../assets/img/navlinks/icons8-linkedin-48.png"
-import twitterImg from "../../assets/img/navlinks/icons8-twitter-48.png"
-import logoLarge from "../../assets/img/logo/logoLarge.png"
+import facebookImg from "../../assets/img/navlinks/icons8-facebook-48.png";
+import linkedinImg from "../../assets/img/navlinks/icons8-linkedin-48.png";
+import twitterImg from "../../assets/img/navlinks/icons8-twitter-48.png";
+import logoLarge from "../../assets/img/logo/logoLarge.png";
+import '../../assets/css/materialize.css';
+import '../../assets/css/style.css';
 
-import '../../assets/css/materialize.css'
-import '../../assets/css/style.css'
 
 function Footer(){
     return(
@@ -24,6 +24,7 @@ function Footer(){
                 <div className="col l3 s12">
                 <img src={logoLarge} alt="logo"/>
 
+                    </div>
                 </div>
                 <div className="col l3 s12">
                     <h5 className="white-text">Connect</h5>
@@ -38,7 +39,7 @@ function Footer(){
                     </ul>
                 </div>
             </div>
-        </div>
+        
         <div className="footer-copyright">
             <div className="container">Made by The Se7enth Man</div>
         </div>
