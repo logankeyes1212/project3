@@ -2,6 +2,8 @@ import React from "react";
 import facebookImg from "../../assets/img/navlinks/icons8-facebook-48.png"
 import linkedinImg from "../../assets/img/navlinks/icons8-linkedin-48.png"
 import twitterImg from "../../assets/img/navlinks/icons8-twitter-48.png"
+import logoLarge from "../../assets/img/logo/logoLarge.png"
+
 import '../../assets/css/materialize.css'
 import '../../assets/css/style.css'
 
@@ -20,6 +22,7 @@ function Footer(){
 
                 </div>
                 <div className="col l3 s12">
+                <img src={logoLarge} alt="logo"/>
 
                 </div>
                 <div className="col l3 s12">
