@@ -5,6 +5,11 @@ const session = require('express-session')
 const dbConnection = require('./server/database')
 const MongoStore = require('connect-mongo')(session)
 const passport = require('./server/passport');
+const mongoose = require('mongoose');
+
+// Route requires
+const players = require('./routes/api/players');
+
 const app = express()
 const PORT = 8080
 // Route requires
@@ -40,6 +45,19 @@ if (process.env.NODE_ENV === "production") {
 }
 // Routes
 app.use('/user', user)
+
+// app.get("*", (req, res) => {
+// 	res.sendFile(path.join(__dirname, "./client/build/index.html"));
+// });
+
+const db = require('./config/keys').mongoURI;
+
+mongoose.connect(db)
+	.then(() => console.log('MongoDB connected...'))
+	.catch(err => console.log(err));
+// use Routes
+app.use('/api/players', players);
+//app.use('/api/nbaplayercombined', nbaplayers);
 
 app.get("*", (req, res) => {
 	res.sendFile(path.join(__dirname, "./client/build/index.html"));
