@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import '../../assets/css/materialize.css';
 import '../../assets/css/style.css';
-import logo from "../../assets/img/logo/logob-ball.png";
+import API from "../../utils/API";
 
 
+console.log("API",API.getPlayer)
 
 
 class Picks extends Component {
@@ -13,6 +14,14 @@ class Picks extends Component {
         // trending: "trending"
         league: "The default text"
     }
+   
+//     test(){
+//     API.getBook(this.props.match.params.id)
+//     .then(res => this.setState({ player: res.data }))
+//     .catch(err => console.log(err));
+// }
+    
+    
     constructor() {
         super()
     }
@@ -133,7 +142,7 @@ class Picks extends Component {
 
                     <div className="row">
                         <div className="col s12 center">
-                            <a onClick={this.leagueLeader} className="btn-large waves-effect waves-light orange lighten-1">Leaders</a>
+                            <a onClick={ this.test} className="btn-large waves-effect waves-light orange lighten-1">Leaders</a>
                             <a onClick={this.leagueSleepers} className="btn-large waves-effect waves-light orange lighten-1">Sleepers</a>
                             <a onClick={this.leagueTrending} className="btn-large waves-effect waves-light orange lighten-1">Trending</a>
                             <div>{this.state.league}</div>
